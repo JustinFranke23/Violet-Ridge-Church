@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#b89bb4;
+}
+
+header {
+width: 100%;
+background-color: #815c7e;
+padding: 30px;
+font-size: 20px;
+top: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #e4cb80;
+    text-align: center;
+}
+
+.nav-bar{
+   
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #815c7e;
+}
+
+body{
+    font-style: sans-serif, ;
+}
+
+.HomePage {
+    background-image:url('https://vrcoc.org/wp-content/uploads/2020/02/53819529_2355805444442775_6814417699066609664_o.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50vh;
+    width: 50vw;
+    margin: 10px auto 20px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.6) 5px 5px 5px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.Logo {
+    height: 200px;
+    width: 200px;
+}
+    
+/*Phone Query*/
+
+@media screen and (max-width: 360px) {
+    .HomePage{
+
+    }
+}
