@@ -16,6 +16,17 @@ font-size: 20px;
 top: 0;
 }
 
+footer{
+    width: 100%;
+    background-color: #815c7e;
+    padding: 30px;
+    font-size: 15px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    color: #e4cb80;
+}
+
 ul{
     list-style: none;
 }
