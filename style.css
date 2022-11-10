@@ -32,7 +32,7 @@ a{
 
 .nav-menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: white;
     background-color: #815c7e;
 }
@@ -57,9 +57,10 @@ body{
     color: white;
 }
 
-.Logo {
+.Logo img{
     height: 200px;
     width: 200px;
+    float: left;
 }
     
 /*Phone Query*/
