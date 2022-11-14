@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<!-- Make sure you put this AFTER Leaflet's CSS reference -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <title>Violet Ridge Church of Christ</title>
 </head>
 <header>
     <nav class="nav-bar">
       <ul class="nav-menu">
         <li><a href=index.html>Home</a></li>
-        <li><a href=AboutUs.html>About Us</a></li>
+        <li><a href=OurChurch.html>Our Church</a></li>
         <li><a href=Calendar.html>Calender</a></li>
         <li><a href=ContactUs.html>Contact Us</a></li>
       </ul>
     </nav>
 </header>
 <body>
+  <div id="map"></div>
+  <script src="javascript/script.js"></script>
     
 </body>
 <footer>

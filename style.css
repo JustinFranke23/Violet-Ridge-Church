@@ -116,6 +116,11 @@ body{
     font-size: 18px;
     outline: none;
  }
+
+ #map{
+    height: 88vh;
+    width: 100vw
+ }
     
 /*Phone Query*/
 
