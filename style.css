@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Gulzar', serif;
 }
 
 body{
@@ -118,9 +119,105 @@ body{
  }
 
  #map{
-    height: 88vh;
+    height: 85vh;
     width: 100vw
  }
+
+ .cal-container {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .calendar {
+    height: 55rem;
+    width: 52rem;
+    background-color:#d8c3b0; 
+    box-shadow:  rgba(0,0,0,0.6) 5px 5px 5px;
+    border-radius: 10px;
+ }
+
+ .month{
+    height: 15rem;
+    width: 100%;
+    background-color:#815c7e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ .month i{
+    font-size: 3rem;
+    cursor: pointer;
+ }
+
+ .month h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+ }
+
+ .month p {
+    font-size: 1.6rem;
+ }
+
+ .weekdays {
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+ }
+
+ .weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(49rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: .5rem .7rem rgba(0,0,0,0.3);
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+}
+
+.days div {
+    font-size: 1.4rem;
+    margin: .3rem;
+    height: 5rem;
+    width: calc(40.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.5rem .7rem rgba(0,0,0,0.3);
+    transition: background-color 0.2s;
+}
+
+.prev-month, .next-month {
+    opacity: .5;
+}
+
+.today {
+    background-color: #7f5779;
+    border-radius: 10px;
+}
+
+.days div:hover:not(.today) {
+    background-color:#F5E9D4;
+    border: .3rem solid darkgray;
+}
     
 /*Phone Query*/
 
