@@ -205,7 +205,7 @@ body{
     transition: background-color 0.2s;
 }
 
-.prev-month, .next-month {
+.prev-date, .next-date {
     opacity: .5;
 }
 
