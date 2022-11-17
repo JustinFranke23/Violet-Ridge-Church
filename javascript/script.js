@@ -61,7 +61,7 @@ const renderCalendar = () => {
 
 
     for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+    days += `<div class="prev-month">${prevLastDay - x + 1}</div>`;
  }
 
     for (let i = 1; i <= lastDay; i++) {
@@ -76,7 +76,7 @@ const renderCalendar = () => {
    }
 
   for (let j = 1;j <= nextDays;j++) {
-    days += `<div class="next-date">${j}</div>`;
+    days += `<div class="next-month">${j}</div>`;
     monthDays.innerHTML = days;
    }
 };
@@ -95,14 +95,3 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
-
-
-//Map API will attempt to fix console error
-
-const L = window.L
-
-const map = L.map('map').setView([38.79462555473118, -84.6169389355239], 19);
-L.tileLayer('https://maptiles.p.rapidapi.com/en/map/v1/{z}/{x}/{y}.png?rapidapi-key=53c4f0644bmsh7a490ca7886f56ep180f41jsnac2c5504b031', {
-attribution: 'Tiles &copy: <a href="https://www.maptilesapi.com/">MapTiles API</a>, Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-maxZoom: 19
-}).addTo(map);
