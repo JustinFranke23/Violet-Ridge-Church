@@ -11,7 +11,6 @@
     <title>Violet Ridge Church of Christ</title>
 </head>
 <header>
-  
     <nav class="nav-bar">
       <ul class="nav-menu">
         <li><a href=index.html>Home</a></li>
@@ -22,35 +21,34 @@
       </ul>
     </nav>
 </header>
-<div class="CountContainer">
-  <div class="counters">
-    <div class="characters">
-      <span>Characters</span>
-      <div id="charcount">0</div>
-    </div>
-    <div class="characters">
-      <span>Characters</span>
-      <div id="wordcount">0</div>
-    </div>
-  </div>
+<script>const textArea = document.getElementById('content');
+    const charactersCount = document.getElementById('cCount');
+    const wordcount = document.getElementById('wCount');
+    
+    textArea.oninput = () => {
+        let characters = textArea.value;
+        charactersCount.textContent = characters.length;
+    };
 
+    </script>
+<main class="prayerbody">
+  <div class="container">
+    <div class="counters">
+        <div class="charactersCounter">
+            <span>Characters</span>
+            <div id="cCount">0</div>
+        </div>
 
-</div>
-<body>
- <div class="contact-info">
-   <form onsubmit="validateForm()">
-     <h2>Inquiries or Suggestions?</h2>
-     <input id="name" type="text" name="name" class="field name" placeholder="Your Name">
-     <input id="email" type="text" class="field" placeholder="Your Email">
-     <input id="phone" type="text" class="field" placeholder="Your Phone">
-     <textarea class="field area" placeholder="Your Message Here"></textarea>
-     <button type="submit" class="button">Send</button>
-   </form>
+        <div class="wordsCounter">
+            <span>Characters</span>
+            <div id="wCount">0</div>
+        </div>
+    </div>
+
+    <textarea id="content" cols="30" rows="10"></textarea>
   </div>
-  <script src="javascript/script.js">
-  </script>
-</body>
+</main>
 <footer>
-  Created by Justin Franke &copy;2022
+Created by Justin Franke &copy;2022
 </footer>
 </html>

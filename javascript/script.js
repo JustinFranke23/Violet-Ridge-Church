@@ -93,5 +93,4 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
-/* Upcoming Christmas Service */
-    
+//
