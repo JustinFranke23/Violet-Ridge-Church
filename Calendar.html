@@ -20,6 +20,22 @@
       </ul>
     </nav>
 </header>
+<div class="christmas"><script>let today = new Date();
+  
+  let christmasYear = today.getFullYear();
+
+  if (today.getMonth() == 11 &&today.getDate() > 25) {
+      christmasYear = christmasYear + 1;
+  }
+
+  let christmasDate = new Date(christmasYear, 11, 25);
+
+
+  let dayMilliseconds =1000 * 60 * 60 * 24;
+
+  let remainingDays = Math.ceil((christmasDate.getTime() - today.getTime()) /(dayMilliseconds));
+
+  document.write("There are " + remainingDays +" days remaining until Christmas service!");</script></div>
 <body>
   <div class=cal-container>
     <div class="calendar">
@@ -87,10 +103,12 @@
         <div class="next-month">10</div>
       </div>
     </div>
-  </div>
+    
+  
   
   <script src="javascript/script.js"></script>
 </body>
+
 <footer>
   Created by Justin Franke &copy;2022
 </footer>

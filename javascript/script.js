@@ -17,8 +17,7 @@ const validateForm = () => {
 
         
     }
-}
-
+};
 //Calendar
 
 const date = new Date();
@@ -61,12 +60,11 @@ const renderCalendar = () => {
 
 
     for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div class="prev-month">${prevLastDay - x + 1}</div>`;
- }
+        days += `<div class="prev-month">${prevLastDay - x + 1}</div>`;
+    }
 
     for (let i = 1; i <= lastDay; i++) {
-     if ( i === new Date().getDate() && date.getMonth() === new Date().getMonth()
-     )
+     if ( i === new Date().getDate() && date.getMonth() === new Date().getMonth())
     {
         days += `<div class="today">${i}</div>`;
     } else {
@@ -75,9 +73,9 @@ const renderCalendar = () => {
     
    }
 
-  for (let j = 1;j <= nextDays;j++) {
-    days += `<div class="next-month">${j}</div>`;
-    monthDays.innerHTML = days;
+    for (let j = 1;j <= nextDays;j++) {
+        days += `<div class="next-month">${j}</div>`;
+        monthDays.innerHTML = days;
    }
 };
 
@@ -95,3 +93,5 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
+/* Upcoming Christmas Service */
+    
