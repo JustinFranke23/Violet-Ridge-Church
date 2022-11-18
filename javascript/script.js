@@ -93,4 +93,11 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
-//
+/* Word counter for prayer */
+
+function countWords(self) {
+    var spaces = self.value.match(/\S+/g);
+    var words = 0; if (spaces) words = spaces.length
+ 
+    document.getElementById("words-counter").innerHTML = words + " words";
+}

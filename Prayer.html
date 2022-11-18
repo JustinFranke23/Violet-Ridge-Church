@@ -21,33 +21,16 @@
       </ul>
     </nav>
 </header>
-<script>const textArea = document.getElementById('content');
-    const charactersCount = document.getElementById('cCount');
-    const wordcount = document.getElementById('wCount');
-    
-    textArea.oninput = () => {
-        let characters = textArea.value;
-        charactersCount.textContent = characters.length;
-    };
-
-    </script>
-<main class="prayerbody">
-  <div class="container">
-    <div class="counters">
-        <div class="charactersCounter">
-            <span>Characters</span>
-            <div id="cCount">0</div>
-        </div>
-
-        <div class="wordsCounter">
-            <span>Characters</span>
-            <div id="wCount">0</div>
-        </div>
-    </div>
-
-    <textarea id="content" cols="30" rows="10"></textarea>
-  </div>
-</main>
+<body>
+<div class="h1p">
+    <h1 class="prayh1">Prayer request</h1>
+    <p class="prayp">Have a prayer request? send your prayer here and we will put you on our prayer list.</p>
+    <h2 class="praymsg"><textarea class="praytext" onkeyup="countWords(this);"></textarea>
+    <span id="words-counter"></span></h2>
+    <buttontype="submit" class="button">Send</button>
+</div>    
+</body>
+<script src="javascript/script.js"></script>
 <footer>
 Created by Justin Franke &copy;2022
 </footer>
